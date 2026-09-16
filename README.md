@@ -4,19 +4,19 @@ A comprehensive relational database implementation designed using **MySQL Workbe
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 - [Project Overview](#project-overview)
 - [Database Schema](#database-schema)
-- [Activity 2: Database Setup & Data Manipulation](#activity-2-database-setup--data-manipulation)
-  - [Problem 1 & 2: DDL & Constraints](#problem-1--2-ddl--constraints)
-  - [Problem 3: Data Loading (DML)](#problem-3-data-loading-dml)
-  - [Problem 4: Operations & Constraint Validation](#problem-4-operations--constraint-validation)
-- [Activity 3: Data Query Language (DQL)](#activity-3-data-query-language-dql)
+- [Activity 2 Database Setup and Data Manipulation](#activity-2-database-setup-and-data-manipulation)
+  - [Problem 1 and 2 DDL and Constraints](#problem-1-and-2-ddl-and-constraints)
+  - [Problem 3 Data Loading DML](#problem-3-data-loading-dml)
+  - [Problem 4 Operations and Constraint Validation](#problem-4-operations-and-constraint-validation)
+- [Activity 3 Data Query Language DQL](#activity-3-data-query-language-dql)
 - [How to Run in MySQL Workbench](#how-to-run-in-mysql-workbench)
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 The University Management System database tracks student details, subject configurations, semester marks, and GPA results. 
 
 **Key Technical Features Implemented:**
@@ -27,7 +27,7 @@ The University Management System database tracks student details, subject config
 
 ---
 
-## 🗄️ Database Schema
+## Database Schema
 
 The system consists of 4 main tables:
 1. **`Student_Info`**: Stores personal details, contact numbers, and joining information.
@@ -37,19 +37,19 @@ The system consists of 4 main tables:
 
 ---
 
-## ⚙️ Activity 2: Database Setup & Data Manipulation
+## Activity 2 Database Setup and Data Manipulation
 
-### Problem 1 & 2: DDL & Constraints
+### Problem 1 and 2 DDL and Constraints
 Created database tables with the following key rules:
 - `Contact_Number` uses `BIGINT` to support 10-digit integers without range overflow.
 - `CHECK` constraint ensuring `Date_of_Birth < Date_of_Joining`.
 - `CHECK` constraints ensuring `Marks <= 100` and `GPA <= 10.0`.
 - Unique constraint preventing duplicate `Subject_Name` and `Contact_Number`.
 
-### Problem 3: Data Loading (DML)
+### Problem 3 Data Loading DML
 Loaded initial seed datasets into `Student_Info`, `Subject_Master`, `Student_Marks`, and `Student_Result`.
 
-### Problem 4: Operations & Constraint Validation
+### Problem 4 Operations and Constraint Validation
 This section validates database constraints against intentional erroneous inputs:
 - **Updating Registration & Subject Codes**: Handled successfully using `SET SQL_SAFE_UPDATES = 0;`.
 - **Missing Weightage (Error 1364)**: Triggers `NOT NULL` constraint violation on missing required columns.
@@ -58,7 +58,7 @@ This section validates database constraints against intentional erroneous inputs
 
 ---
 
-## 📊 Activity 3: Data Query Language (DQL)
+## Activity 3 Data Query Language DQL
 
 Activity 3 includes 36 DQL queries executing various data analytics functions across the database:
 
@@ -70,7 +70,7 @@ Activity 3 includes 36 DQL queries executing various data analytics functions ac
 
 ---
 
-## 🚀 How to Run in MySQL Workbench
+## How to Run in MySQL Workbench
 
 1. Clone this repository:
    ```bash
