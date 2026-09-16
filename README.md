@@ -70,8 +70,3 @@ Activity 3 includes 36 DQL queries executing various data analytics functions ac
 
 ---
 
-## How to Run in MySQL Workbench
-
-1. Clone this repository:
-   ```bash
-   git clone [https://github.com/your-username/university-management-system-sql.git](https://github.com/your-username/university-management-system-sql.git)
